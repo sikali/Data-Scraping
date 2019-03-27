@@ -11,9 +11,10 @@ from lxml.html import fromstring
 
 
 
-CITY = "San_Diego"
-STATE = "CA"
-#url = 'https://www.yelp.com/search?find_desc=vape%20shop&find_loc=Irvine%2C+CA&ns=1'
+
+STATE = "CA"                            
+                
+
 MAX_SLEEP = 12000 # in milliseconds
 
 #178.237.208.78
@@ -143,8 +144,8 @@ def build_yelp_url(page):
     ''' Builds Yelp URL for the given page and cflt to be parsed according to
     config variables '''
     
-
-    url2 = "http://www.yelp.com/search?find_desc=cbd".format(page_to_index(page))
+                                                #ADD KEYWORD AFTER = 
+    url2 = "http://www.yelp.com/search?find_desc=".format(page_to_index(page))
     if CITY:
         url2 += "&find_loc={0}".format(CITY)
     url2 +="%2C%20{0}".format(STATE)
@@ -160,8 +161,8 @@ def build_yelp_url2(page,cityname):
     ''' Builds Yelp URL for the given page and cflt to be parsed according to
     config variables '''
     
-
-    url2 = "http://www.yelp.com/search?find_desc=cbd".format(page_to_index(page))
+                                                #ADD KEYWORD AFTER = 
+    url2 = "http://www.yelp.com/search?find_desc=".format(page_to_index(page))
     
     
     if CITY:
@@ -255,7 +256,7 @@ def r_sleep():
 
 
 
-csvname = "CBDCaliforniaList.csv"
+csvname = "example.csv"
 
 filename = create_file(csvname)
 
