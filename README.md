@@ -1,11 +1,11 @@
 # Data-Scraping
-Data Scraping with Requests
+Data Scraping with Requests and Selenium
 
 
 Data Scraping Projects
 
-Amazon - scrape product data 
+Amazon - scrape product data with Selenium  
 
-Yelp  - scrape store/shop data 
+Yelp  - scrape store/shop data with Requests
 
-Walmart - scrape product data
+Walmart - scrape product data with Selenium
